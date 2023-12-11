@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+        <link href="{%static 'css/bootstrap-theme.css'%}" rel="stylesheet">
+        <link rel="stylesheet" href="{%static 'css/swiper.min.css'%}">
+        <link href="{%static 'css/style.css'%}" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+  <nav>
+      <div class="top-ribbon"></div>
+      <ul class="nav-font clearfix">
+        <li><a href="{% url 'observation' %}">observation</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'realisation' %}">Realisation</a></li>
+        <li><a href="{% url 'competence' %}">Competence</a></li>
+        <li><a href="{% url 'presentation' %}">Presentation</a></li>
+        <li><a href="{% url 'index' %}">Acceuil</a></li>
+
+      </ul>
+    </nav>
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Realisation</h1>
+                <h1 class="position-absolute text-uppercase text-primary">formation & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Formation</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                      <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Formation en Concepteur et developpeur d'application numerique</h5>
+                        <p class="mb-2"><strong>Inclusiv Academy</strong> | <small>juillet 2013- janvier 2024</small></p>
+                    </div>
+                    <div class="position-relative mb-4">
+                      <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                      <h5 class="font-weight-bold mb-1">FORMATION SYSTEME DE PLANIFICATION ET SUIVI-EVALUATION D'UN PROJET</h5>
+                      <p class="mb-2"><strong>Ecole Nationale d'Informatique</strong> | <small>juillet 2022</small></p>
+                  </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master II en Administration des Systemes et Reseaux</h5>
+                            <p class="mb-2"><strong>Ecole Nationale d'Informatique</strong> | <small>2013 - 2015</small></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Licence en Informatique des Systemes et Reseaux</h5>
+                            <p class="mb-2"><strong>Ecole de Management et d'inovation des techonologies</strong> | <small>2009 - 2012</small></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4"> Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Conception et développement d’un application desktop 
+                              « meet-tady »</h5>
+                            <p class="mb-2"><strong>Inclusiv Academy</strong> | <small>octobre 2023</small></p>
+                            <p>Un site de mise en relation entre Entreprises  étudiants pour des travaux ponctuels Inclusiv Academy</p>
+                                  <ul class="nav-font clearfix">
+                                      <li>Etude des besoins</li>
+                                      <li>Conception UML</li>
+                                      <li>Rédaction du cahier des charges fonctionnel et technique</li>
+                                      <li>Développement, outils utilisés : C#, WPF, PostgreSQL</li>
+                                      <li>Tests</li>
+                                  </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Assistante responsable suivi et évaluation
+                          </h5>
+                            <p class="mb-2"><strong>AIM Ambohibary Ambositra (projet Ranowash)
+                          </strong> | <small>juin 2021 - juin 2022</small></p>
+                          <ul class="nav-font clearfix">
+                              <li>Numérisation des tous les documents utilisés durant la réalisation du  projet</li>
+                              <li>Vérification des documents et rédaction de rapport en cas de 
+                                  problèmes</li>
+                              <li>Archivage</li>
+                              
+                          </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Responsable chef informatique </h5>
+                            <p class="mb-2"><strong>GRAIN Export Mandaniresaka Antsirabe</strong> | <small>juin 2017- aout 2017</small></p>
+                                  <ul> 
+                                      <li>Installation du réseau interne</li>
+                                      <li>Maintenance informatique</li>
+                                      <li>mise a jour des prix avec excel</li>
+                                      <li>preparer les spots publicitaire et les montages video et photo</li>
+                                  </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                          <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                          <h5 class="font-weight-bold mb-1"> stagiaire </h5>
+                          <p class="mb-2"><strong>DSI de la BOA antaninarenina</strong> | <small>juillet 2014- decembre 2014</small></p>
+                          <p>configuration d’une banque mobile et sécurisation du réseau</p>
+                                <p>Outils : GNS3, routeur Cisco, VPN, IPSEC, switch, carte hwic 
+                                  3G +</p>
+                          
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/orchid%C3%A9-djiboxine-ngita-b31264233"><img src="{%static 'assets/linking.png'%}"></a></li>
+    <li><a href="https://www.facebook.com/djiboxine"><img src="{%static 'assets/fb.png'%}"></a></li>
+    <li><a href="https://github.com/DjiboxineNgita"><img src="{%static 'assets/github.png'%}"></a></li>
+    <li><a href="djiboxine@gmail.com"><img src="{%static 'assets/gmail.png'%}"></a></li>
+                  </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+<script src="{%static 'js/main.js'%}"></script>
+
+      
+</body>
+</html>

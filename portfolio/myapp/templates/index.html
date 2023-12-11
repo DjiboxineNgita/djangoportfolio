@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+        <link href="{%static 'css/bootstrap-theme.css'%}" rel="stylesheet">
+        <link rel="stylesheet" href="{%static 'css/swiper.min.css'%}">
+        <link href="{%static 'css/style.css'%}" rel="stylesheet">
+        <link href="{%static 'lib/owlcarousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+  <nav>
+      <div class="top-ribbon"></div>
+      <ul class="nav-font clearfix">
+        
+        <li><a href="{% url 'observation' %}">observation</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'realisation' %}">Realisation</a></li>
+        <li><a href="{% url 'competence' %}">Competence</a></li>
+        <li><a href="{% url 'presentation' %}">Presentation</a></li>
+        <li><a href="{% url 'index' %}">Acceuil</a></li>
+      </ul>
+    </nav>
+  
+    
+    <div class="sparator"></div>
+<header class="hero" ; background-size: cover;">
+  <div class="container-fluid d-flex justify-content-end align-items-start py-5" id="home" style="min-height: 100vh;">
+    <div class="row">
+      <div class="col-lg-7 text-center">
+        <h1 class="display-3 text-uppercase text-purple mb-2" style="-webkit-text-stroke: 2px #ca1da5; color: rgb(168, 37, 180);">Orchide RAKOTOSON</h1>
+        <h1 class="typed-text-output d-inline font-weight-lighter text-purple"></h1>
+        <div class="typed-text d-none" style="color: rgb(168, 37, 180);">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
+      </div>
+    </div>
+  </div>
+  <ul class="social-links">
+    <li><a href="https://www.linkedin.com/in/orchid%C3%A9-djiboxine-ngita-b31264233"><img src="{%static 'assets/linking.png'%}"></a></li>
+    <li><a href="https://www.facebook.com/djiboxine"><img src="{%static 'assets/fb.png'%}"></a></li>
+    <li><a href="https://github.com/DjiboxineNgita"><img src="{%static 'assets/github.png'%}"></a></li>
+    <li><a href="djiboxine@gmail.com"><img src="{%static 'assets/gmail.png'%}"></a></li>
+  </ul>
+</header>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <script src="{%static 'lib/typed/typed.min.js'%}"></script>
+      <script src="{%static 'lib/easing/easing.min.js'%}"></script>
+      <script src="{%static 'lib/waypoints/waypoints.min.js'%}"></script>
+      <script src="{%static 'lib/owlcarousel/owl.carousel.min.js'%}"></script>
+      <script src="{%static 'lib/isotope/isotope.pkgd.min.js'%}"></script>
+      <script src="{%static 'lib/lightbox/js/lightbox.min.js'%}"></script>
+  
+      <!-- Contact Javascript File -->
+      <script src="{%static 'mail/jqBootstrapValidation.min.js'%}"></script>
+      <script src="{%static 'mail/contact.js'%}"></script>
+  
+      <!-- Template Javascript -->
+      <script src="{%static 'js/main.js'%}"></script>
+</body>
+</html>

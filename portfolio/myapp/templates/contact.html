@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+        <link href="{%static 'css/bootstrap-theme.css'%}" rel="stylesheet">
+        <link rel="stylesheet" href="{%static 'css/swiper.min.css'%}">
+        <link href="{%static 'css/style.css'%}" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+  <nav>
+      <div class="top-ribbon"></div>
+      <ul class="nav-font clearfix">
+        
+        <li><a href="{% url 'observation' %}">observation</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'realisation' %}">Realisation</a></li>
+        <li><a href="{% url 'competence' %}">Competence</a></li>
+        <li><a href="{% url 'presentation' %}">Presentation</a></li>
+        <li><a href="{% url 'index' %}">Acceuil</a></li>
+
+      </ul>
+    </nav>
+    
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/orchid%C3%A9-djiboxine-ngita-b31264233"><img src="{%static 'assets/linking.png'%}"></a></li>
+    <li><a href="https://www.facebook.com/djiboxine"><img src="{%static 'assets/fb.png'%}"></a></li>
+    <li><a href="https://github.com/DjiboxineNgita"><img src="{%static 'assets/github.png'%}"></a></li>
+    <li><a href="djiboxine@gmail.com"><img src="{%static 'assets/gmail.png'%}"></a></li>
+                  </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+<script src="{%static 'js/main.js'%}"></script>
+    
+      
+</body>
+</html>
